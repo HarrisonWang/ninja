@@ -28,7 +28,7 @@ indicatif = { version = "0.17.7", optional = true }
 json_to_table = { version = "0.7.0", optional = true }
 tabled = { version = "0.12.2", optional = true }
 self_update = { path = "./crates/self_update", default-features = false, features = ["archive-tar", "compression-flate2"] }
-reqwest = { package = "reqwest-impersonate", version ="0.11.49", default-features = false, features = ["impersonate"] }
+reqwest = { package = "reqwest-impersonate", version ="=0.11.60", default-features = false, features = ["impersonate"] }
 
 # self update
 zip = { version = "0.6", default-features = false, features = ["time"], optional = true }
@@ -53,7 +53,7 @@ sysctl = "0.5.4"
 futures-util = "0.3.28"
 serde_json = "1.0.107"
 tokio = { version = "1.35.1", default-features = false, features = ["rt"] }
-reqwest = { package = "reqwest-impersonate", version ="0.11.49", default-features = false, features = [
+reqwest = { package = "reqwest-impersonate", version ="=0.11.60", default-features = false, features = [
     "boring-tls", "impersonate","json", "cookies", "stream", "multipart", "socks", "blocking"
 ] }
 base64 = "0.21.4"
